@@ -1,0 +1,337 @@
+/*Paleta de colores d3d3d3-a4161a-660708-161a1d-0b090a */
+
+.principal{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6% 0 0.25% 0;
+    background-color: #161a1d;
+}
+
+.logo{
+    margin-left: 3%;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.menu{
+    margin-right: 3%;
+}
+
+.principal nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.principal nav a{
+    text-decoration: none;
+    color: #d3d3d3;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+/*DESCRIPCION PERSONAL*/
+.descripcionPersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 5% 30% 8% 8%;
+    background-color: #0b090a;
+    background-image: url("imagenes/Polygon\ Luminary.svg");
+    background-size: cover;
+    
+}
+.descripcionPersonal h3, .descripcionPersonal h1, .descripcionPersonal p{
+    text-align: left;
+    margin: 2.5%;
+    color: #d3d3d3;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.descripcionPersonal h3{
+    color: #a4161a;
+    font-weight: 900;
+    font-size:24px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.descripcionPersonal h1{
+    font-weight: 900;
+    font-size:48px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.btn-sobremi{
+    width: 120px;
+    height: 40px;
+    margin: 2.5%;
+    background-color: #a4161a;
+    border-color: #a4161a;
+    color: #d3d3d3;
+    box-shadow: 0 0 0 transparent;
+    font-family: 'Anek Gujarati', sans-serif;
+    font-weight: bold;
+}   
+
+/*MENU DE PROYECTO*/
+.tiposProyecto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 5% 8% 2.5% 8%;
+    background-color: #0b090a;
+    
+}
+
+.dataScience, .dataExploration, .dashboard, .deepLearning{
+    display:flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    width: 20%;
+    background-color: #161a1d;
+    padding: 2% 2% 2% 2%;    
+}
+
+.dataExploration, .dataScience{
+    background-color: #a4161a;
+}
+
+.dash, .data, .ml{
+    width: 80px;
+    color: #a4161a;
+}
+
+.tiposProyecto h2, .tiposProyecto p, .tiposProyecto a{
+    color: #d3d3d3;
+    margin: 7% 0 3% 0;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.tiposProyecto p{
+    text-align: justify;
+}
+
+.tiposProyecto h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+}
+.tiposProyecto a{
+    color: #a4161a;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.tiposProyecto a::after {
+    vertical-align: middle;
+    content: "➜"; 
+    font-size: 20px;
+    margin-left: 10px; 
+}
+
+.dataExploration a, .dataScience a{
+    color: #d3d3d3;
+}
+
+/*HABILIDADES*/
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    padding: 2.5% 8% 2.5% 8%;
+    background-color: #0b090a;
+}
+  
+.grid-item{
+    background-color: #0b090a;
+    text-align: center;
+    padding: 5%;
+}
+
+.python,.sql,.bigquery,.looker,.tagManager,.analytics{
+    width: 80px;
+    height: 80px;
+}
+
+.habilidades h1{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #d3d3d3;
+    padding-top: 5%;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+/*PROYECTIOS DESTACADOS*/
+.destacados{
+    background-color: #0b090a;
+    padding: 5% 8% 2.5% 8%;
+}
+
+.textoDestacados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.textoDestacados h1{
+    color: #d3d3d3;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.textoDestacados h2{
+    color: #d3d3d3;
+    font-size: 15px;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.btn-vermas{
+    width: 120px;
+    height: 40px;
+    background-color: #a4161a;
+    border-color: #a4161a;
+    color: #d3d3d3;
+    box-shadow: 0 0 0 transparent;
+    font-weight: bold;
+} 
+
+.proyectosDestacados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-proyecto{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-proyecto img{
+    width: 90%;
+    padding: 10% 5% 10% 5%;
+    background-color: #161a1d;
+}
+
+.grid-proyecto h1, .grid-proyecto a{
+    text-align: left;
+    font-family: 'Anek Gujarati', sans-serif;
+    padding-top: 1%;
+}
+
+.grid-proyecto h1{
+    color: #d3d3d3;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.grid-proyecto a{
+    color: #a4161a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid-proyecto a::after {
+    content: "➜"; 
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    background-color: #0b090a;
+    padding: 2.5% 0 2.5% 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161a1d;
+}
+
+.contactoTexto{
+    margin-left: 3%;
+}
+
+.contactoTexto h1{
+    color: #d3d3d3;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.contactoTexto h2{
+    color: #d3d3d3;
+    font-size: 15px;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.btn-contacto{
+    width: 120px;
+    height: 40px;
+    background-color: #a4161a;
+    border-color: #a4161a;
+    color: #d3d3d3;
+    box-shadow: 0 0 0 transparent;
+    margin: 5%;
+    font-family: 'Anek Gujarati', sans-serif;
+    font-weight: bold;
+} 
+
+/*MENU SECUNDARIO*/
+.menu-secundario{
+    text-align: center;
+    background-color: #0b090a;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.menu-secundario nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.menu-secundario nav a{
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 15px;
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #161a1d;
+    padding: 1.5%;
+}
+
+footer .logo, .github, .youtube, .facebook{
+    width: 30px;
+    margin-left: 15px;
+}
+
+.imagenes-redes{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.creador-texto{
+    text-align: center;
+}
