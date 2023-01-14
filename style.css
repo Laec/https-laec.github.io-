@@ -144,11 +144,12 @@
     grid-gap: 20px;
 
     padding: 2.5% 8% 2.5% 8%;
-    background-color: #0b090a;
+    background-image: linear-gradient(to bottom, #0b090a, #0b090a, #161a1d, #161a1d, #0b090a,#0b090a);
+    /*background-color: #161a1d;*/
 }
   
 .grid-item{
-    background-color: #0b090a;
+    /*background-color: #161a1d;*/
     text-align: center;
     padding: 5%;
 }
@@ -169,7 +170,7 @@
 /*PROYECTIOS DESTACADOS*/
 .destacados{
     background-color: #0b090a;
-    padding: 5% 8% 2.5% 8%;
+    padding: 2.5% 8% 2.5% 8%;
 }
 
 .textoDestacados{
@@ -334,4 +335,103 @@ footer .logo, .github, .youtube, .facebook{
 
 .creador-texto{
     text-align: center;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:480px){
+    /*MENU*/
+    .logo img{
+        width: 30px;
+    }
+
+    .principal nav a{
+        font-size: 14px;
+    }
+
+    /*DESCRIPCION PERSONAL*/
+    .descripcionPersonal{
+        align-items: center;
+        padding: 8%;        
+    }
+    .descripcionPersonal h3, .descripcionPersonal h1, .descripcionPersonal p{
+        text-align: center;
+        margin: 2.5%;
+    }
+
+    /*MENU DE PROYECTO*/
+    .tiposProyecto{
+        flex-direction: column;
+        align-items: center;
+        padding: 8%;
+    }
+
+    .dataScience, .dataExploration, .dashboard, .deepLearning{
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .tiposProyecto h2, .tiposProyecto p, .tiposProyecto a{
+        margin: 3% 0 3% 0;
+    }
+
+    /*HABILIDADES*/
+    .habilidades{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /*PROYECTIOS DESTACADOS*/
+
+    .textoDestacados{
+        flex-direction: column;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    
+    .textoDestacados h1{
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    
+    .textoDestacados h2{
+        font-size: 15px;
+        margin-bottom: 3%;
+    }
+    
+    .btn-vermas{
+        width: 120px;
+        height: 40px;
+        margin: 5%;
+    } 
+
+    .proyectosDestacados{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    
+    /*CONTACTO*/
+    .contacto{
+        padding: 2.5%;
+        flex-direction: column;
+    }
+
+    .contactoTexto{
+        margin: 2%;
+        text-align: center;
+    }
+
+    .contactoTexto h1{
+        font-size: 20px;
+    }
+
+    .contactoTexto h2{
+        font-size: 15px;
+    }
+
+    /*MENU SECUNDARIO*/
+    .menu-secundario nav a{
+        font-size: 14px;
+    }
 }
