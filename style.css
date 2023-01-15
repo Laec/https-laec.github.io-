@@ -1,4 +1,4 @@
-/*Paleta de colores d3d3d3-a4161a-660708-161a1d-0b090a */
+/*Paleta de colores d3d3d3-76b900-660708-161a1d-0b090a */
 
 .principal{
     display:flex;
@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.6% 0 0.25% 0;
-    background-color: #161a1d;
+    background-color: whitesmoke;
 }
 
 .logo{
@@ -28,7 +28,7 @@
 
 .principal nav a{
     text-decoration: none;
-    color: #d3d3d3;
+    color: #666;
     font-family: 'Anek Gujarati', sans-serif;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .descripcionPersonal h3{
-    color: #a4161a;
+    color: #76b900;
     font-weight: 900;
     font-size:24px;
     font-family: 'Archivo Black', sans-serif;
@@ -67,50 +67,75 @@
     width: 120px;
     height: 40px;
     margin: 2.5%;
-    background-color: #a4161a;
-    border-color: #a4161a;
-    color: #d3d3d3;
+    transition: 0.1s;
+    background-color: #76b900;
+    border-color: #76b900;
+    color: #eee;
     box-shadow: 0 0 0 transparent;
     font-family: 'Anek Gujarati', sans-serif;
     font-weight: bold;
-}   
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.btn-sobremi:hover {
+    background-color: #84c710;
+    border-color: #84c710;
+}
 
 /*MENU DE PROYECTO*/
 .tiposProyecto{
+    padding: 5% 8% 2.5% 8%;
+    background-color: #eee;
+}
+
+.texto-tiposProyecto{
+    text-align: center; 
+}
+
+.texto-tiposProyecto h1{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.grid-tiposProyecto{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    padding: 5% 8% 2.5% 8%;
-    background-color: #0b090a;
-    
+    justify-content:space-between;    
 }
 
 .dataScience, .dataExploration, .dashboard, .deepLearning{
     display:flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     width: 20%;
-    background-color: #161a1d;
-    padding: 2% 2% 2% 2%;    
+    background-color: #ffffff;
+    padding: 2% 2% 2% 2%;
+
+    transition: all 0.3s;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 19%), 0 2px 6px 0 rgb(0 0 0 / 19%);
 }
 
-.dataExploration, .dataScience{
-    background-color: #660708;
+.tipoProyecto:hover{
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%), 0 4px 12px 0 rgb(0 0 0 / 25%);
 }
 
 .dash, .data, .ml{
-    width: 80px;
-    color: #a4161a;
+    width: 100px;
+    align-self: center;
 }
 
 .tiposProyecto h2, .tiposProyecto p, .tiposProyecto a{
-    color: #d3d3d3;
-    margin: 7% 0 3% 0;
+    color: #000000;
+    margin: 3% 0 3% 0;
     font-family: 'Anek Gujarati', sans-serif;
+    text-decoration: none;
 }
 
 .tiposProyecto p{
     text-align: justify;
+    color: #1a1a1a;
 }
 
 .tiposProyecto h2{
@@ -118,34 +143,33 @@
     font-weight: bold;
     font-family: 'Archivo Black', sans-serif;
 }
-.tiposProyecto a{
-    color: #a4161a;
-    text-decoration: none;
-    vertical-align: middle;
-    font-weight: bold;
-}
-
-.tiposProyecto a::after {
-    vertical-align: middle;
-    content: "➜"; 
-    font-size: 20px;
-    margin-left: 10px; 
-}
-
-.dataExploration a, .dataScience a{
-    color: #d3d3d3;
-}
 
 /*HABILIDADES*/
 .habilidades{
+    background-color: #eee;
+}
+
+.textoHabilidades{
+    margin-bottom: 2%;
+    text-align: center; 
+}
+
+.textoHabilidades h1{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.grid-habilidades{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px;
 
     padding: 2.5% 8% 2.5% 8%;
-    background-image: linear-gradient(to bottom, #0b090a, #0b090a, #161a1d, #161a1d, #0b090a,#0b090a);
-    /*background-color: #161a1d;*/
+    /*background-image: linear-gradient(to bottom, #0b090a, #0b090a, #161a1d, #161a1d, #0b090a,#0b090a);*/
 }
   
 .grid-item{
@@ -159,100 +183,80 @@
     height: 80px;
 }
 
-.habilidades h1{
+.grid-habilidades h1{
     font-size: 20px;
     font-weight: lighter;
-    color: #d3d3d3;
+    color: #000000;
     padding-top: 5%;
     font-family: 'Anek Gujarati', sans-serif;
 }
 
-/*PROYECTIOS DESTACADOS*/
+/*PROYECTOS DESTACADOS*/
 .destacados{
-    background-color: #0b090a;
+    background-color: #eee;
     padding: 2.5% 8% 2.5% 8%;
 }
 
 .textoDestacados{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 2%;
+    text-align: center;
 }
 
 .textoDestacados h1{
-    color: #d3d3d3;
+    color: #000000;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 3%;
     font-family: 'Archivo Black', sans-serif;
 }
 
-.textoDestacados h2{
-    color: #d3d3d3;
-    font-size: 15px;
-    font-family: 'Anek Gujarati', sans-serif;
-}
-
-.btn-vermas{
-    width: 120px;
-    height: 40px;
-    background-color: #a4161a;
-    border-color: #a4161a;
-    color: #d3d3d3;
-    box-shadow: 0 0 0 transparent;
-    font-weight: bold;
-} 
-
 .proyectosDestacados{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
 }
 
 .grid-proyecto{
-    text-align: left;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 5% 5% 5% 2.5%; 
+
+    transition: all 0.3s;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 19%), 0 2px 6px 0 rgb(0 0 0 / 19%);
+}
+
+.grid-proyecto:hover{
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 25%), 0 4px 12px 0 rgb(0 0 0 / 25%);
 }
 
 .grid-proyecto img{
+    margin-bottom: 3%;
     width: 90%;
-    padding: 10% 5% 10% 5%;
     background-color: #161a1d;
 }
 
-.grid-proyecto h1, .grid-proyecto a{
-    text-align: left;
+.grid-proyecto h1, .grid-proyecto p{
+    width: 90%;
+    text-align: justify;
     font-family: 'Anek Gujarati', sans-serif;
-    padding-top: 1%;
+    color: #666;
 }
 
 .grid-proyecto h1{
-    color: #d3d3d3;
+    margin-bottom: 3%;  
+    color: #000000;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bold;    
     font-family: 'Archivo Black', sans-serif;
-}
-
-.grid-proyecto a{
-    color: #a4161a;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.grid-proyecto a::after {
-    content: "➜"; 
-    font-size: 20px;
-    margin-left: 10px;
 }
 
 /*CONTACTO*/
 
 .contacto{
-    background-color: #0b090a;
     padding: 2.5% 0 2.5% 2.5%;
     display: flex;
     flex-direction: row;
@@ -282,33 +286,20 @@
 .btn-contacto{
     width: 120px;
     height: 40px;
-    background-color: #a4161a;
-    border-color: #a4161a;
+    background-color: #76b900;
+    border-color: #76b900;
     color: #d3d3d3;
     box-shadow: 0 0 0 transparent;
     margin: 5%;
     font-family: 'Anek Gujarati', sans-serif;
     font-weight: bold;
-} 
-
-/*MENU SECUNDARIO*/
-.menu-secundario{
-    text-align: center;
-    background-color: #0b090a;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    transition: 0.1s;
+    letter-spacing: 2px;
 }
 
-.menu-secundario nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-.menu-secundario nav a{
-    text-decoration: none;
-    color: #d3d3d3;
-    font-size: 15px;
-    font-family: 'Anek Gujarati', sans-serif;
+.btn-contacto:hover {
+    background-color: #84c710;
+    border-color: #84c710;
 }
 
 /*FOOTER*/
@@ -316,30 +307,43 @@
 footer{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
     align-items: center;
     background-color: #161a1d;
-    padding: 1.5%;
+}
+
+footer div, footer nav{
+    width: 33%;
+}
+
+footer nav{
+    text-align: center;    
 }
 
 footer .logo, .github, .youtube, .facebook{
     width: 30px;
-    margin-left: 15px;
+    margin-right: 20px;
 }
 
-.imagenes-redes{
-    align-items: center;
-    justify-content: center;
+footer nav li{
+    display: inline;
+    padding-left: 4%;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 15px;
+    font-family: 'Anek Gujarati', sans-serif;
     
 }
 
-.creador-texto{
-    text-align: center;
+.imagenes-redes{
+    text-align: right;    
 }
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:480px){
+@media screen and (max-width:720px){
     /*MENU*/
     .logo img{
         width: 30px;
@@ -360,7 +364,7 @@ footer .logo, .github, .youtube, .facebook{
     }
 
     /*MENU DE PROYECTO*/
-    .tiposProyecto{
+    .grid-tiposProyecto{
         flex-direction: column;
         align-items: center;
         padding: 8%;
@@ -376,7 +380,7 @@ footer .logo, .github, .youtube, .facebook{
     }
 
     /*HABILIDADES*/
-    .habilidades{
+    .grid-habilidades{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -430,8 +434,14 @@ footer .logo, .github, .youtube, .facebook{
         font-size: 15px;
     }
 
-    /*MENU SECUNDARIO*/
-    .menu-secundario nav a{
-        font-size: 14px;
+    /*FOOTER*/
+    footer .logo, .github, .youtube, .facebook{
+        width: 15px;
+        margin-right: 5px;
     }
+
+    footer nav a{
+        font-size: 10px;        
+    }
+
 }
