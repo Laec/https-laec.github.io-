@@ -64,7 +64,7 @@
 }
 
 .btn-sobremi{
-    width: 120px;
+    width: 130px;
     height: 40px;
     margin: 2.5%;
     transition: 0.1s;
@@ -282,6 +282,9 @@
     font-size: 15px;
     font-family: 'Anek Gujarati', sans-serif;
 }
+.contacto a{
+    margin: 5%;
+}
 
 .btn-contacto{
     width: 120px;
@@ -290,7 +293,6 @@
     border-color: #76b900;
     color: #d3d3d3;
     box-shadow: 0 0 0 transparent;
-    margin: 5%;
     font-family: 'Anek Gujarati', sans-serif;
     font-weight: bold;
     transition: 0.1s;
