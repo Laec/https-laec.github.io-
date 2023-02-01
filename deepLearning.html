@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luis Espinoza - Portafolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bodyPrincipal">
+
+    <header class="principal">
+
+        <div class="logo">
+            <h1><img src="imagenes/logo.png"></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="Proyectos.html" target="_blank">PROYECTOS</a></li>
+                    <li><a href="https://docs.google.com/document/d/1l7QRtD-sIXn50oTRSfTdnkeeODNSGEfS/edit?usp=sharing&ouid=111296478616362168045&rtpof=true&sd=true"
+                            target="_blank">SOBRE MI</a></li>
+                    <li><a href="https://wa.me/+51983260078" target="_blank">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="bodyPrincipal">
+
+        <section class="proyecto-cabecera">
+            <h3>DEEP LEARNING</h3>
+        </section>
+
+        <section class="dashProyecto">
+
+            <div class="grid-dashProyecto">
+                <a href="https://lookerstudio.google.com/u/0/reporting/6293c34c-ca3a-4428-bd60-c45ce3621216/page/7iDCD"
+                    target="_blank" class="dosPuntos contenido-Proyecto">
+                    <img src="imagenes/segmentacion2.webp">
+                    <h2>Segmentacion con Pix2Pix</h2>
+                    <p>Pix2pix es una arquitectura generativa de deep learning basada en redes neuronales adversarias.
+                        Es usada para generar imágenes a partir de imágenes input, donde el modelo aprende a traducir
+                        una imagen en una imagen en otro formato. El proyecto tiene como fin segmentar las celdas de los
+                        semilleros de plántulas en base a una foto tomada con un controlador raspberry Pi. <br><br>Para
+                        el desarrollo de este
+                        proyecto se realizó lo siguiente:<br>1. Script de python para la toma de fotos<br>2. Script de
+                        Concatenación de la imágen real y la imágen segmentada<br>3. Mapeo de las transformaciones (data
+                        augmentation, normalization)
+                        <br>4. Creacion del modelo Pix2Pix con
+                        tensorflow<br>5. Entrenamiento de la red neuronal y visualización de la evolución del error
+                    </p>
+                </a>
+
+                <a href="https://lookerstudio.google.com/u/0/reporting/06871ce4-1d63-4588-8253-3d4f4437b8fa/page/8P67C"
+                    target="_blank" class="hackspace contenido-Proyecto">
+                    <img src="imagenes/SR2.webp">
+                    <h2>UnetSR</h2>
+                    <p>UnetSR es una variación de la arquitectura UNet diseñada para tareas de super-resolución de
+                        imágenes, donde el objetivo es aumentar la resolución de una imagen baja a una resolución más
+                        alta. En lugar de utilizar técnicas de "downsampling" y "upsampling" para la segmentación de
+                        imágenes, UnetSR se centra en mejorar la resolución de la imagen y puede ser útil en
+                        aplicaciones como la mejora de la calidad de imagen en microscopía.<br><br>Para
+                        el desarrollo de este proyecto se realizó lo siguiente:<br>1. Recopilación de las imágenes <br>2. Downsampling y concatenación de la
+                        imágenes<br>3. Mapeo de las transformaciones (resize,
+                        totensor, normalization)<br>4. Creación del modelo UnetSR<br>5. Entrenamiento de la red neuronal en lotes</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="contacto">
+
+            <div class="contactoTexto">
+                <h1>Trabajemos juntos en tu siguiente proyecto</h1>
+                <h2>Agenda una entrevista conmigo para discutir cómo puedo contribuir al éxito de tu equipo.</h2>
+            </div>
+            <a href="https://wa.me/+51983260078" target="_blank"><button class="btn-contacto">CONTACTO</button></a>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contenedor-logo">
+            <img src="imagenes/logo.png" class="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">INICIO</a></li>
+                <li><a href="Proyectos.html" target="_blank">PROYECTOS</a></li>
+                <li><a href="https://docs.google.com/document/d/1l7QRtD-sIXn50oTRSfTdnkeeODNSGEfS/edit?usp=sharing&ouid=111296478616362168045&rtpof=true&sd=true"
+                        target="_blank">SOBRE MI</a></li>
+                <li><a href="https://wa.me/+51983260078" target="_blank">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <div class="imagenes-redes">
+            <a href="" target="_blank"><img src="imagenes/facebook.png" class="facebook"></a>
+            <a href="" target="_blank"><img src="imagenes/youtube.png" class="youtube"></a>
+            <a href="https://github.com/Laec" target="_blank"><img src="imagenes/github.png" class="github"></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
